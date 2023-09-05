@@ -1,0 +1,239 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Educational
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head  runat="server">
+<title>Product Marketing Based On Review Categories </title>
+  <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.tabs.setup.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div class="topbox">
+        <h2>Nullamlacus dui ipsum</h2>
+        <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat. Adipisciniapellentum leo ut consequam ris felit elit id nibh sociis malesuada.</p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+  
+  
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo" style ="width :auto; text-align :center ;  ">
+      <h1><a href="#" style ="font-size :xx-large;color :Maroon; text-align :center ; padding-left :145px;">Product Marketing Based On Review Categories</a></h1>
+    
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5" >
+  
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="featured_slide">
+    <div id="featured_wrap">
+     <ul id="featured_tabs">
+        <li><a href="#fc1">Early Reviewer<br />
+          <span> Early reviewer tends to post more helpful
+reviews.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+        <li><a href="#fc2">Embedding model
+<br />
+          <span> A novel margin-based
+embedding model for early reviewer prediction.</span></a></li>
+        <li><a href="#fc3">Early Reviewer Identification<br />
+          <span>The product lifetime into different stages so as to identify
+early reviewers.</span></a></li>
+        <li class="last"><a href="#fc4">Preprocessing<br />
+          <span>We first remove reviews from anonymous users, since each review with a unique user.</span></a></li>
+      </ul>
+      <div id="featured_content">
+        <div class="featured_box" id="fc1"><img src="images/demo/early4.jpg" alt="" />
+          
+        </div>
+        <div class="featured_box" id="fc2"><img src="images/demo/early6.jpg" alt="" />
+       
+        </div>
+        <div class="featured_box" id="fc3"><img src="images/demo/early2.jpg" alt="" />
+        
+        </div>
+        <div class="featured_box" id="fc4"><img src="images/demo/early5.jpg" alt="" />
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper col5" >
+  <br />
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+    <div id="hpage">
+    <br /><br />
+    <table border="0" align="center" width ="100%" >
+    <tr>
+    <td>
+    
+    
+        <asp:Menu ID="Menu1" runat="server" Font-Bold="True" ForeColor="Maroon" 
+            Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" Visible="False">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Homepage" Value="Homepage">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminLogin.aspx" Text="Admin Login" 
+                    Value="Admin Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Login.aspx" Text="User Login" Value="User Login">
+                </asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle HorizontalPadding="100px" />
+        </asp:Menu>
+    
+    
+    </td>
+    </tr>
+    <tr>
+    <td  >
+    
+    
+        <asp:Menu ID="Menu2" runat="server" Font-Bold="True" ForeColor="Maroon" 
+            Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" 
+            Visible="False">
+            <DynamicHoverStyle ForeColor="#009933" />
+            <DynamicMenuItemStyle HorizontalPadding="25px" ItemSpacing="5px" 
+                VerticalPadding="5px" />
+            <Items>
+                <asp:MenuItem Text="Category" Value="Category">
+                    <asp:MenuItem NavigateUrl="~/NewCategory.aspx" Text="New Category" 
+                        Value="New Category"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewAllCategory.aspx" 
+                        Text="View All Category" Value="View All Category"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Product" Value="Product">
+                    <asp:MenuItem NavigateUrl="~/NewProduct.aspx" Text="New Product" 
+                        Value="New Product"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewAllProduct.aspx" Text="View All Product" 
+                        Value="View All Product"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminViewUserDetails.aspx" Text="User Details" 
+                    Value="User Details"></asp:MenuItem>
+                <asp:MenuItem 
+                    Text="Purchase" Value="Purchase">
+                    <asp:MenuItem NavigateUrl="~/AdminViewMonthwiseReport.aspx" 
+                        Text="Monthwise Report" Value="Monthwise Report"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewPurchaseProductDetails.aspx" 
+                        Text="Overall Report" Value="Overall Report"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminViewUnpopularProducts.aspx" 
+                    Text="Unpopular Product" Value="Unpopular Product"></asp:MenuItem>
+                <asp:MenuItem Text="Review" Value="Review">
+                    <asp:MenuItem NavigateUrl="~/AdminViewEarlyReviewer.aspx" Text="Early Reviewer" 
+                        Value="Early Reviewer"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewSpamReviewer.aspx" Text="Spam Reviewer" 
+                        Value="Spam Reviewer"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Chart" Value="Chart">
+                    <asp:MenuItem NavigateUrl="~/AdminViewEarlyReviewChart.aspx" 
+                        Text="Early Review Chart" Value="Early Review Chart"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminViewSpamReviewChart.aspx" 
+                        Text="Spam Review Chart" Value="Spam Review Chart"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="#009933" />
+            <StaticMenuItemStyle HorizontalPadding="25px" />
+        </asp:Menu>
+    
+    
+    </td>
+    </tr>
+    <tr>
+    <td>
+    
+    
+        <asp:Menu ID="Menu3" runat="server" Font-Bold="True" ForeColor="Maroon" 
+            Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" Visible="False">
+            <DynamicHoverStyle ForeColor="#009933" />
+            <DynamicMenuItemStyle HorizontalPadding="45px" ItemSpacing="5px" 
+                VerticalPadding="5px" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/ShowMyDetails.aspx" Text="Profile" Value="Profile">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Account" Value="Account">
+                    <asp:MenuItem NavigateUrl="~/BankAccount.aspx" Text="Create Account" 
+                        Value="Create Account"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AmountUpdate.aspx" Text="Amount Update" 
+                        Value="Amount Update"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewAccount.aspx" Text="View Account" 
+                        Value="View Account"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/TopKRankingProducts.aspx" Text="Top K Ranking" 
+                    Value="Top K Ranking"></asp:MenuItem>
+                <asp:MenuItem Text="Purchase" Value="Purchase">
+                    <asp:MenuItem NavigateUrl="~/UserViewProduct.aspx" Text="Purchase Product" 
+                        Value="View Products"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UserViewPurchaseProduct.aspx" 
+                        Text="View Purchase Product" Value="View Purchase Product"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/SendReview1.aspx" Text="Send Review" 
+                    Value="Send Review"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="#009933" />
+            <StaticMenuItemStyle HorizontalPadding="45px" />
+        </asp:Menu>
+    
+    
+    </td>
+    </tr>
+    </table>
+    <br /><br />
+      <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <br class="clear" />
+  </div>
+</div>
+</form> 
+</body>
+</html>
